@@ -1,4 +1,128 @@
-<!doctype html><html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#31594d"><meta name="apple-mobile-web-app-capable" content="yes"><title>时间银行 · 把努力存起来</title><link rel="manifest" href="manifest.json"><link rel="icon" href="icon.svg"><link rel="apple-touch-icon" href="icon.svg"><style>
-:root{--green:#31594d;--ink:#243f36;--muted:#7d887e;--paper:#f7f5ed;--line:#e4e7dc;--orange:#b77245}*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,'PingFang SC','Microsoft YaHei',sans-serif}button,input,select{font:inherit}button{cursor:pointer}button:focus-visible,a:focus-visible{outline:3px solid #d6a769;outline-offset:3px}.shell{max-width:1120px;margin:auto;padding:34px 32px 110px}header{display:flex;align-items:center;justify-content:space-between;margin-bottom:40px}.brand{display:flex;align-items:center;gap:12px;font-size:21px;font-weight:750;letter-spacing:2px}.mark{display:grid;place-items:center;width:42px;height:42px;background:var(--green);border-radius:15px;color:#f9e5b6;font-size:25px}.tag{font-size:12px;color:var(--muted);letter-spacing:2px}.intro{display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:25px}h1{font-size:30px;font-weight:650;margin:8px 0 10px;letter-spacing:1px}p{line-height:1.7}.sub{color:var(--muted);font-size:14px;margin:0}.eyebrow{font-size:11px;letter-spacing:3px;color:var(--orange);font-weight:700}.date{font-size:13px;color:var(--muted)}.grid{display:grid;grid-template-columns:1.05fr 1fr;gap:24px}.balance{background:var(--green);color:#fff9e9;border-radius:25px;padding:30px 32px;position:relative;overflow:hidden;min-height:280px}.balance:after{content:'◷';position:absolute;right:18px;top:50px;font-size:180px;color:#ffffff0c}.balance small{font-size:13px;color:#d1dbd2}.amount{font-size:76px;font-weight:650;letter-spacing:-3px;margin:17px 0 7px}.amount span{font-size:17px;letter-spacing:0;margin-left:10px;font-weight:400}.balance-line{border-top:1px solid #ffffff24;margin-top:24px;padding-top:20px;font-size:13px;display:flex;justify-content:space-between}.card{background:#fffef9;border:1px solid var(--line);border-radius:23px;padding:26px}.card h2{font-size:18px;margin:0 0 7px;font-weight:650}.card .sub{font-size:12px}.stats{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:16px}.stat{background:#eeeee2;border-radius:16px;padding:19px 22px;font-size:12px;color:var(--muted)}.stat strong{display:block;font-size:25px;margin-top:7px;color:var(--ink);font-weight:600}.stat strong small{font-size:12px;font-weight:400;margin-left:4px}label{font-size:13px;display:block;margin-bottom:8px}.fields{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:23px}input,select{width:100%;padding:12px;border:1px solid #dce0d4;border-radius:10px;background:#fff;color:var(--ink);min-height:46px}input[type=checkbox]{width:18px;min-height:18px;flex-shrink:0;accent-color:var(--green)}.note{margin-top:16px}.calculation{background:#f1f4e9;padding:14px;border-radius:11px;font-size:14px;margin-top:16px;line-height:1.6}.check{display:flex;gap:9px;align-items:flex-start;font-size:12px;line-height:1.7;margin:16px 0}.primary{border:0;background:var(--green);color:white;border-radius:12px;width:100%;padding:14px;font-weight:600}.secondary{border:1px solid #d7ddcf;background:transparent;border-radius:10px;color:var(--green);padding:10px 14px;font-size:13px}.history{margin-top:27px}.section-head{display:flex;justify-content:space-between;align-items:center;gap:15px;margin-bottom:18px}.section-head h2{margin:0;font-size:19px}.filters{display:flex;gap:5px;background:#eeeee4;padding:4px;border-radius:10px}.filters button{border:0;background:transparent;color:var(--muted);padding:7px 12px;border-radius:7px;font-size:12px}.filters button.active{background:#fffef9;color:var(--green);box-shadow:0 1px 4px #00000009}.row{display:flex;align-items:center;gap:13px;padding:18px 0;border-bottom:1px solid #eceee4}.row:last-child{border-bottom:0}.badge{width:40px;height:40px;border-radius:13px;background:#edf2e7;display:grid;place-items:center;color:var(--green);font-size:23px}.row .text{flex:1;min-width:0}.row b{font-size:14px;font-weight:600}.row small{display:block;font-size:12px;color:var(--muted);margin-top:6px;word-break:break-word}.change{font-size:20px;white-space:nowrap;font-weight:600}.minus{color:var(--orange)}.remove{border:0;background:none;color:#899185;font-size:12px;padding:8px}.empty{text-align:center;padding:35px 10px;color:var(--muted);font-size:13px;line-height:1.9}.empty span{display:block;font-size:32px;margin-bottom:10px}.bottom{display:flex;justify-content:space-between;align-items:center;gap:16px;margin-top:24px;font-size:12px;color:var(--muted)}.actions{display:flex;gap:8px;flex-wrap:wrap}.foot{font-size:11px;line-height:1.8;color:var(--muted);text-align:center;margin-top:28px}.quote{font-family:serif;font-size:15px;font-style:italic;color:#8c9581;margin-top:23px;line-height:1.8}.mobile-nav{display:none}dialog{max-width:430px;width:calc(100% - 32px);border:1px solid var(--line);border-radius:22px;padding:26px;background:#fffef9;color:var(--ink)}dialog::backdrop{background:#19362d70}dialog h2{margin-top:0;font-size:21px}.modal-actions{display:flex;gap:10px;margin-top:22px}.modal-actions button{flex:1}.toast{position:fixed;bottom:30px;left:50%;transform:translateX(-50%);background:#243f36;color:white;padding:13px 23px;border-radius:12px;font-size:14px;z-index:9;box-shadow:0 6px 24px #0002;max-width:90%;text-align:center}.hidden{display:none!important}.tip{font-size:12px;color:var(--muted);line-height:1.8;margin-top:14px}@media(max-width:720px){.shell{padding:22px 18px 55px}header{margin-bottom:30px}.tag{font-size:10px;letter-spacing:1px}.brand{font-size:19px}h1{font-size:25px}.intro{display:block}.date{margin-top:14px}.grid{grid-template-columns:1fr;gap:20px}.balance{min-height:250px;padding:25px}.amount{font-size:68px}.card{padding:22px 18px}.quote{display:none}.stats{margin-top:12px;gap:12px}.stat{padding:16px 20px}.section-head{align-items:flex-start}.filters button{padding:7px 9px}.bottom{flex-direction:column;align-items:flex-start}.row{gap:9px}.remove{padding:6px}.change{font-size:18px}.balance-line{font-size:12px}.foot{text-align:left}}
-</style></head><body><div class="shell"><header><div class="brand"><span class="mark">◷</span>时间银行</div><span class="tag">把努力，一点点存起来</span></header><div class="intro"><div><div class="eyebrow">MY LITTLE TIME BANK</div><h1>今天的努力，明天的从容。</h1><p class="sub">每一分认真，都值得被记住。</p></div><div class="date" id="today"></div></div><main><section class="card" style="margin-bottom:24px"><h2>妈妈的离线时间银行</h2><p class="sub" id="offlineStatus" role="status">尚未确认离线准备状态，请先联网完成配置。</p><button type="button" class="secondary" id="prepareOffline" style="margin-top:14px">准备离线使用</button><p class="tip">① 在 Safari 联网打开 → 点击“准备离线使用”。<br>② 显示准备完成后，使用分享菜单“添加到主屏幕”。<br>③ 从桌面图标重新打开，确认准备完成，再开启飞行模式测试记账与重新打开。<br>记录保存在这台设备的当前浏览器环境，Safari 与桌面版可能分开保存；正式使用请固定从桌面图标进入。离线副本可被持有手机的人访问，请使用手机锁屏保护。</p></section><div class="grid"><section><div class="balance"><small>我的时间存折 · 当前可用</small><div class="amount"><b id="balance">0</b><span>分钟</span></div><small id="balanceHint">从今天开始，存下第一份时间。</small><div class="balance-line"><span>手动存入 · 手动支取</span><span>时间不会自动过期 ✧</span></div></div><div class="stats"><div class="stat">累计存入<strong id="earned">0<small>分钟</small></strong></div><div class="stat">累计支取<strong id="spent">0<small>分钟</small></strong></div></div><p class="quote">“慢慢来，把认真完成的每一天，<br>变成属于自己的小小积蓄。”</p></section><section class="card"><h2>记一笔时间</h2><p class="sub">选择存入或用掉，直接填写分钟数，由家长确认入账。</p><form id="entryForm"><div class="fields"><div><label for="entryDate">记录日期</label><input id="entryDate" type="date" required></div><div><label for="entryType">记账类型</label><select id="entryType"><option value="in">存入分钟</option><option value="out">用掉分钟</option></select></div><div><label for="minutes">分钟数</label><input id="minutes" type="number" inputmode="numeric" min="1" max="1000000" step="1" required placeholder="例如：30"></div></div><div class="note"><label for="reason">今天的小备注（选填）</label><input id="reason" maxlength="100" placeholder="例如：今天数学作业比较多"></div><div class="calculation" id="calculation" aria-live="polite"></div><label class="check"><input type="checkbox" id="confirmed" required><span>家长已确认本次分钟数及存入或用掉的类型。</span></label><button class="primary" type="submit">确认记入存折 <span aria-hidden="true">↗</span></button><p class="tip">同一天可记多笔。用掉的分钟不能超过当时余额；记错可撤销重记。</p></form></section></div><section class="card history" id="history"><div class="section-head"><h2>时间的足迹</h2><div class="filters" aria-label="筛选记录"><button class="active" data-filter="all">全部</button><button data-filter="in">存入</button><button data-filter="out">支取</button></div></div><div id="records"></div></section><div class="bottom"><span id="saveStatus">记录保存在当前设备，请定期备份</span><div class="actions"><button class="secondary" id="export">↓ 导出备份</button><button class="secondary" id="import">↑ 恢复备份</button></div></div><p class="foot">使用提示：在 iPhone 的 Safari 分享菜单中，选择“添加到主屏幕”。<br>本版不自动跨设备同步。清理网站数据或更换手机前，请先导出备份。家长确认是共同约定，不是密码保护。</p></main></div><input type="file" id="fileInput" accept="application/json,.json" hidden><dialog id="confirmDialog"><h2 id="confirmTitle">请确认</h2><p id="confirmText" style="font-size:14px;line-height:1.8"></p><div class="modal-actions"><button class="secondary" id="cancelAction">取消</button><button class="primary" id="acceptAction">确认</button></div></dialog><div class="toast hidden" id="toast" role="status"></div><script src="app.js"></script><script src="offline.js"></script></body></html>
-
+<!doctype html>
+<html lang="zh-CN" data-app-version="time-bank-offline-v4-mobile">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#f7f5ed">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<title>时间银行 · 把努力存起来</title>
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="icon.svg">
+<link rel="apple-touch-icon" href="icon.svg">
+<style>
+:root{color-scheme:light;--green:#31594d;--ink:#243f36;--muted:#626f65;--paper:#f7f5ed;--line:#dce2d5;--orange:#a15e34}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%;scroll-padding-top:20px}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,'PingFang SC','Microsoft YaHei',sans-serif;font-size:16px;line-height:1.6}
+button,input,select{font:inherit}
+button{cursor:pointer;touch-action:manipulation}
+button:disabled{opacity:.6;cursor:wait}
+button:focus-visible,a:focus-visible,summary:focus-visible{outline:3px solid #ba8745;outline-offset:3px}
+input:focus,select:focus{outline:2px solid var(--green);outline-offset:2px}
+.shell{max-width:560px;margin:auto;padding:16px 16px calc(24px + env(safe-area-inset-bottom));padding-top:max(16px,env(safe-area-inset-top));padding-left:max(16px,env(safe-area-inset-left));padding-right:max(16px,env(safe-area-inset-right))}
+header{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:16px}
+.brand{display:flex;align-items:center;gap:9px;font-weight:700;font-size:21px;white-space:nowrap}
+.mark{display:grid;place-items:center;width:34px;height:34px;border-radius:12px;background:var(--green);color:#fff5da;font-size:24px;line-height:1}
+.date{font-size:13px;color:var(--muted);text-align:right}
+h1,h2,p{margin:0}h2{font-size:20px;line-height:1.4;font-weight:650}
+.sub,.tip{color:var(--muted);font-size:14px;line-height:1.7}
+.sub{margin-top:5px}.tip{margin-top:12px}
+.grid{display:grid;grid-template-columns:minmax(0,1fr);gap:16px}
+.grid>*,.fields>*,.row>*{min-width:0}
+.balance{background:var(--green);color:#fff9e9;border-radius:22px;padding:20px 22px}
+.balance-label{font-size:14px;color:#e0e8df}
+.amount{display:flex;align-items:baseline;gap:9px;margin:0 0 2px;font-size:56px;line-height:1.2;font-weight:650;letter-spacing:-2px}
+.amount b{overflow-wrap:anywhere;font-variant-numeric:tabular-nums}
+.amount span{font-size:16px;font-weight:400;letter-spacing:0;flex-shrink:0}
+#balanceHint{display:block;margin-top:7px;color:#e0e8df;font-size:13px}
+.stats{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;border-top:1px solid #ffffff35;margin-top:16px;padding-top:12px}
+.stat{font-size:13px;color:#e0e8df}
+.stat strong{display:block;font-size:22px;font-weight:600;color:#fff9e9;font-variant-numeric:tabular-nums;overflow-wrap:anywhere}
+.stat small{font-size:12px;font-weight:400;margin-left:5px}
+.card{background:#fffef9;border:1px solid var(--line);border-radius:20px;padding:20px}
+.fields{display:grid;grid-template-columns:minmax(0,1fr);gap:16px;margin-top:18px}
+label{display:block;margin-bottom:7px;font-size:16px;font-weight:500}
+input:not([type=checkbox]),select{display:block;box-sizing:border-box;width:100%;min-width:0;max-width:100%;min-height:52px;border:1px solid #cbd5c5;border-radius:12px;background:#fff;color:var(--ink);padding:12px;font-size:18px;line-height:1.35}
+input[type=date]{appearance:none;-webkit-appearance:none;text-align:left}
+input[type=date]::-webkit-date-and-time-value{text-align:left;min-height:1.35em}
+input[type=number]{font-size:30px;font-weight:600;min-height:64px;font-variant-numeric:tabular-nums}
+input::placeholder{color:#8a938a;font-weight:400;font-size:17px}
+.optional{margin-top:16px;border-top:1px solid var(--line);padding-top:3px}
+summary{cursor:pointer;min-height:48px;padding:11px 0;font-size:15px;font-weight:500;touch-action:manipulation}
+.optional[open] summary{margin-bottom:7px}
+.note{margin-top:16px}
+.calculation{background:#eef3e8;border-radius:12px;padding:12px 14px;margin-top:12px;font-size:15px;line-height:1.6}
+.check{display:flex;gap:10px;align-items:flex-start;margin:14px 0;font-size:14px;line-height:1.6;font-weight:400;padding:4px 0;min-height:44px}
+input[type=checkbox]{appearance:auto;-webkit-appearance:checkbox;width:22px;height:22px;flex:0 0 22px;margin:1px 0 0;accent-color:var(--green)}
+.primary,.secondary{min-height:48px;border-radius:12px;padding:11px 14px;font-size:16px;font-weight:600;line-height:1.5;white-space:normal}
+.primary{border:0;background:var(--green);color:white;width:100%;min-height:54px;font-size:18px}
+.secondary{border:1px solid #cbd5c5;background:#fffef9;color:var(--green)}
+.history{margin-top:16px}
+.section-head{display:flex;align-items:center;justify-content:space-between;gap:8px;flex-wrap:wrap;margin-bottom:8px}
+.filters{display:flex;gap:2px;background:#eef0e6;border-radius:10px;padding:3px}
+.filters button{border:0;background:transparent;color:var(--muted);min-height:44px;padding:8px 12px;font-size:14px;border-radius:8px}
+.filters button.active{background:#fffef9;color:var(--green);font-weight:600;box-shadow:0 1px 3px #0001}
+.row{display:grid;grid-template-columns:minmax(0,1fr) auto;column-gap:12px;row-gap:2px;padding:16px 0;border-bottom:1px solid var(--line)}
+.row:last-child{border-bottom:0}.badge{display:none}
+.row .text{grid-column:1;grid-row:1 / span 2}
+.row b{display:block;font-size:15px;font-weight:600}
+.row small{display:block;font-size:14px;color:var(--muted);margin-top:5px;overflow-wrap:anywhere;line-height:1.7}
+.change{grid-column:2;grid-row:1;text-align:right;font-size:24px;font-weight:650;white-space:nowrap;font-variant-numeric:tabular-nums}
+.minus{color:var(--orange)}
+.remove{grid-column:2;grid-row:2;border:0;background:transparent;color:var(--muted);min-width:44px;min-height:44px;padding:6px;font-size:14px}
+.empty{text-align:center;padding:24px 0;color:var(--muted);font-size:14px}.empty span{display:block;font-size:28px;margin-bottom:5px}
+.bottom{margin-top:18px}.save-status{display:block;font-size:13px;color:var(--muted);text-align:center;margin-bottom:12px}
+.actions{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.help{margin-top:16px;border:1px solid var(--line);border-radius:16px;padding:0 16px;background:#f0f1e8}
+.help summary{font-size:15px}.help p{margin:8px 0 12px}.help .secondary{width:100%;margin-bottom:12px}
+.foot{margin-top:18px;color:var(--muted);font-size:12px;line-height:1.8;text-align:center}
+.version{margin-top:6px;font-size:12px;letter-spacing:.5px}
+dialog{width:calc(100% - 32px);max-width:430px;max-height:calc(100dvh - 48px);overflow:auto;border:1px solid var(--line);border-radius:20px;padding:24px;background:#fffef9;color:var(--ink)}
+dialog::backdrop{background:#19362d80}dialog h2{margin-bottom:12px}.modal-actions{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:22px}.modal-actions .primary{font-size:16px;min-height:48px}
+.toast{position:fixed;bottom:calc(20px + env(safe-area-inset-bottom));left:50%;transform:translateX(-50%);width:max-content;max-width:calc(100% - 32px);background:#243f36;color:white;padding:12px 16px;border-radius:12px;font-size:15px;line-height:1.6;text-align:center;box-shadow:0 4px 20px #0002;z-index:20;pointer-events:none}
+.hidden{display:none!important}
+@media(min-width:900px){.shell{max-width:980px;padding-top:28px}.grid{grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);align-items:start;gap:24px}.card{padding:24px}.balance{padding:26px}.amount{font-size:68px}header{margin-bottom:24px}}
+@media(prefers-reduced-motion:no-preference){button{transition:background-color .15s,opacity .15s}}
+</style>
+</head>
+<body>
+<div class="shell">
+<header><h1 class="brand"><span class="mark" aria-hidden="true">◷</span>时间银行</h1><div class="date" id="today"></div></header>
+<main>
+<div class="grid">
+<section class="balance" aria-label="时间余额">
+<p class="balance-label">当前可用</p><div class="amount"><b id="balance">0</b><span>分钟</span></div>
+<small id="balanceHint">从今天开始，存下第一份时间。</small>
+<div class="stats"><div class="stat">累计存入<strong id="earned">0<small>分钟</small></strong></div><div class="stat">累计用掉<strong id="spent">0<small>分钟</small></strong></div></div>
+</section>
+<section class="card" aria-labelledby="entryHeading">
+<h2 id="entryHeading">记一笔时间</h2><p class="sub">选好类型，填入分钟数。</p>
+<form id="entryForm">
+<div class="fields">
+<div><label for="entryType">记账类型</label><select id="entryType"><option value="in">＋ 存入分钟</option><option value="out">－ 用掉分钟</option></select></div>
+<div><label for="minutes">分钟数</label><input id="minutes" type="number" inputmode="numeric" min="1" max="1000000" step="1" required placeholder="输入分钟数，例如 30"></div>
+</div>
+<details class="optional"><summary>日期与备注（默认记今天）</summary>
+<div><label for="entryDate">记录日期</label><input id="entryDate" type="date" required></div>
+<div class="note"><label for="reason">备注（选填）</label><input id="reason" maxlength="100" placeholder="写下这笔时间的用途"></div>
+</details>
+<div class="calculation" id="calculation" aria-live="polite"></div>
+<label class="check"><input type="checkbox" id="confirmed" required><span>家长已确认本次类型与分钟数。</span></label>
+<button class="primary" type="submit">确认记入存折</button>
+<p class="tip">同一天可记多笔，用掉的分钟不能超过余额。</p>
+</form>
+</section>
+</div>
+<section class="card history" aria-labelledby="historyHeading"><div class="section-head"><h2 id="historyHeading">时间记录</h2><div class="filters" aria-label="筛选记录"><button type="button" class="active" data-filter="all">全部</button><button type="button" data-filter="in">存入</button><button type="button" data-filter="out">用掉</button></div></div><div id="records"></div></section>
+<div class="bottom"><span class="save-status" id="saveStatus">记录保存在本机，请定期备份</span><div class="actions"><button type="button" class="secondary" id="export">导出备份</button><button type="button" class="secondary" id="import">恢复备份</button></div></div>
+<details class="help"><summary>离线使用与版本更新</summary><p class="tip" id="offlineStatus" role="status">联网后可准备离线使用。</p><button type="button" class="secondary" id="prepareOffline">检查更新并准备离线</button><p class="tip">iPhone 请用 Safari 打开，完成离线准备后，通过分享菜单“添加到主屏幕”。固定从同一个入口使用，Safari 与桌面图标可能分别保存账目。</p><p class="tip">首次配置后，请用飞行模式验证记账和重新打开。离线资源可能被系统回收，必要时重新联网准备。</p></details>
+<footer class="foot"><p>账目只保存在本机，不自动跨设备同步。<br>清理网站数据、更换手机前，请先导出备份。<br>家长确认是共同约定，不是密码保护。</p><p class="version">手机优化版 · v2.1</p></footer>
+</main>
+</div>
+<input type="file" id="fileInput" accept="application/json,.json" hidden>
+<dialog id="confirmDialog" aria-labelledby="confirmTitle"><h2 id="confirmTitle">请确认</h2><p id="confirmText"></p><div class="modal-actions"><button type="button" class="secondary" id="cancelAction">取消</button><button type="button" class="primary" id="acceptAction">确认</button></div></dialog>
+<div class="toast hidden" id="toast" role="status"></div>
+<script src="app.js"></script><script src="offline.js"></script>
+</body>
+</html>
