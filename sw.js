@@ -1,5 +1,5 @@
 'use strict';
-const CACHE='time-bank-offline-v4-mobile';
+const CACHE='time-bank-offline-v5-mobile';
 const ASSETS=['./','./index.html','./app.js','./offline.js','./manifest.json','./icon.svg'];
 const isUsable=response=>response.ok&&!response.redirected&&response.type!=='opaque';
 self.addEventListener('install',event=>event.waitUntil((async()=>{
