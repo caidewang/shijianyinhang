@@ -1,5 +1,5 @@
 'use strict';
-const CACHE='time-bank-offline-v2';
+const CACHE='time-bank-offline-v3-manual';
 const ASSETS=['./','./index.html','./app.js','./offline.js','./manifest.json','./icon.svg'];
 const isUsable=response=>response.ok&&!response.redirected&&response.type!=='opaque';
 self.addEventListener('install',event=>event.waitUntil((async()=>{
@@ -16,3 +16,4 @@ self.addEventListener('fetch',event=>{
  if(!['','index.html','app.js','offline.js','manifest.json','icon.svg'].includes(relative))return;
  event.respondWith((async()=>{const cache=await caches.open(CACHE);const cached=await cache.match(event.request,{ignoreSearch:true});return cached||fetch(event.request)})());
 });
+
